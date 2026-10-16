@@ -1,20 +1,22 @@
 {
   "name": "taskmanagerapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Full-stack Task Manager API with server-side AI integration and graceful degradation",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test-ai-integration.js",
+    "test:ai": "node test-ai-integration.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "24CS034",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mongoose": "^9.9.4"
+    "mongoose": "^9.9.4",
+    "openai": "^7.34.0"
   }
 }
